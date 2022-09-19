@@ -1,6 +1,9 @@
 .main {
+  padding: 20px 40px;
+}
+.first {
   display: flex;
   align-items: flex-start;
-  padding: 20px 40px;
   gap: 20px;
+  margin-bottom: 40px;
 }

@@ -3,6 +3,7 @@ import Detail from "./components/detail/Detail.jsx";
 import List from "./components/list/List.jsx";
 import axios from "axios";
 import "./app.scss"
+import UseFetchTest from "./components/useFetchTest/UseFetchTest.jsx";
 function App() {
     const [list, setList] = useState([])
     const [activeItem, setActiveItem] = useState(null)
@@ -20,8 +21,13 @@ function App() {
 
   return (
     <main className="main">
-        <List list={list} activeItem={activeItem} changeItem={(item) => changeItem(item)}/>
-        {activeItem && <Detail item={activeItem}/>}
+        <h2>UseEffect</h2>
+        <div className="first">
+            <List list={list} activeItem={activeItem} changeItem={(item) => changeItem(item)}/>
+            {activeItem && <Detail item={activeItem}/>}
+        </div>
+        <h2>UseFetchHook</h2>
+        <UseFetchTest/>
     </main>
   )
 }
