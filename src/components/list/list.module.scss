@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  list-style: none;
+}
+
+.item {
+  padding: 10px ;
+  border: 1px solid grey;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+
+  &.active {
+    color: white;
+    background-color: #1d5fd7;
+  }
+}
+
